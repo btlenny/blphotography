@@ -19,11 +19,13 @@ export default function Example() {
             <div className="relative flex h-12 items-center justify-between">
               {/* Move the logo or image to the right */}
               <div className="flex-shrink-0">
+                <a href="/" className="flex">
                 <img
                   className="h-8 w-auto"
                   src="/logo.svg"
                   alt="Your Company"
                 />
+                </a>
               </div>
               <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
                 {navigation.map((item) => (
