@@ -3,8 +3,13 @@ export default function ContactForm() {
   return (
     <section className="bg-white dark:bg-gray-900">
     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <img
+          src="/images/Photo24.jpg" // Replace "your-image-url.jpg" with the actual URL of your image
+          alt="Contact Us"
+          className="mb-4 mx-auto max-w-full h-auto"
+        />
       <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me</h2>
-      <p className="mb-6 font-light text-center text-gray-500 dark:text-gray-400 sm:text-md">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+      <p className="mb-6 font-light text-center text-gray-500 dark:text-gray-400 xs:text-xs">Send me a message letting me know some dates and locations you'd like to take your photos</p>
       <form action="#" className="grid grid-cols-1 gap-6">
         <div>
           <label htmlFor="email" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
