@@ -1,4 +1,20 @@
+import {useRef} from "react";
+import emailjs from '@emailjs/browser';
+
+
 export default function ContactForm() {
+  const form = useRef()
+  const sendEmail = (event) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_yh38fil', 'template_fhv493s', form.current, '6Y1WBFZrB1YI-byHq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      event.target.reset()
+  };
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -14,7 +30,7 @@ export default function ContactForm() {
           Send me a message letting me know some dates and locations you'd like
           to take your photos
         </p>
-        <form action="#" className="grid grid-cols-1 gap-6">
+        <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-6">
           <div>
             <label
               htmlFor="email"
