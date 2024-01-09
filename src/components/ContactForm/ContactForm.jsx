@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 export default function ContactForm() {
   const form = useRef()
   const sendEmail = (event) => {
-    e.preventDefault();
+    event.preventDefault();
 
     emailjs.sendForm('service_yh38fil', 'template_fhv493s', form.current, '6Y1WBFZrB1YI-byHq')
       .then((result) => {
