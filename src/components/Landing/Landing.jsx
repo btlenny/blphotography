@@ -5,7 +5,7 @@ export default function Landing(){
         <div className="landing-page">
           <div className="content-container">
             <div className="image-container">
-              <img src="your_image_url.jpg" alt="Landing Page Image" />
+              <img src="/images/Photo1.jpg" alt="Landing Page Image" />
             </div>
             <div className="text-container">
               <h1>Your Title</h1>

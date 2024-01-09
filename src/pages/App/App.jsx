@@ -8,7 +8,7 @@ import LandingPage from '../LandingPage/LandingPage'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  
   return (
     <>
       <Router>
@@ -24,7 +24,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App

@@ -7,22 +7,27 @@
   
   .content-container {
     display: flex;
-    flex-direction: column;
     max-width: 1200px;
     width: 100%;
   }
   
   .image-container {
-    order: 2; /* Order 2 by default */
+    flex: 1;
   }
   
   .text-container {
+    flex: 1;
     text-align: center;
   }
   
   /* Media query for mobile view */
   @media (max-width: 767px) {
-    .image-container {
-      order: 1; /* Change order to 1 for mobile view */
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .image-container,
+    .text-container {
+      order: 1; /* Change order for mobile view */
     }
   }
