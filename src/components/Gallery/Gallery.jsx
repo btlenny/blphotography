@@ -3,8 +3,6 @@ import './Gallery.css';
 export default function Gallery() {
     return (
    <> 
-
-   
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
     <div class="grid gap-4">
         <div>

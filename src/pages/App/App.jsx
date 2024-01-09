@@ -13,9 +13,10 @@ function App() {
       <Router>
         <main className="App">
           <NavBar />
+          HIHIHI
           <Routes>
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/" element={<Gallery />} />
+            <Route path="/work" element={<Gallery />} />
           </Routes>
         </main>
       </Router>
