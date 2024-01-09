@@ -1,0 +1,28 @@
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .image-container {
+    order: 2; /* Order 2 by default */
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .image-container {
+      order: 1; /* Change order to 1 for mobile view */
+    }
+  }

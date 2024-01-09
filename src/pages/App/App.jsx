@@ -4,6 +4,7 @@ import './App.css'
 import NavBar from '../../components/NavBar/NavBar'
 import Gallery from '../../components/Gallery/Gallery'
 import ContactPage from '../ContactPage/Contactpage'
+import LandingPage from '../LandingPage/LandingPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,8 +14,8 @@ function App() {
       <Router>
         <main className="App">
           <NavBar />
-          HIHIHI
           <Routes>
+            <Route path="/" element={<LandingPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/work" element={<Gallery />} />
           </Routes>
