@@ -27,8 +27,7 @@ export default function ContactForm() {
           Contact Me
         </h2>
         <p className="mb-6 font-light text-center text-gray-500 dark:text-gray-400 xs:text-xs">
-          Send me a message letting me know some dates and locations you'd like
-          to take your photos
+         
         </p>
         <form ref={form} onSubmit={sendEmail} className="grid grid-cols-1 gap-6">
           <div>
@@ -72,7 +71,7 @@ export default function ContactForm() {
               name="message"
               rows="6"
               className="block p-4 w-full text-xs text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-              placeholder="Leave a comment..."
+              placeholder="Let me know a few dates and locations you'd like to take your photos"
             ></textarea>
           </div>
           <button
