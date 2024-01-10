@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './Landing.css';
+import React, { useState, useEffect } from "react";
+import "./Landing.css";
 
 const imageUrls = [
-  '/images/Photo1.jpg',
-  '/images/Photo2.jpg',
-  '/images/Photo3.jpg',
-  '/images/Photo4.jpg',
-  '/images/Photo5.jpg',
+  "/images/Photo1.jpg",
+  "/images/Photo2.jpg",
+  "/images/Photo4.jpg",
+  "/images/Photo5.jpg",
 ];
 
 export default function Landing() {
@@ -19,7 +18,7 @@ export default function Landing() {
         prevIndex === imageUrls.length - 1 ? 0 : prevIndex + 1
       );
       setImageLoaded(false); // Reset imageLoaded for each new image
-    }, 5000); // 5000 milliseconds (5 seconds)
+    }, 8000); // 5000 milliseconds (5 seconds)
 
     return () => clearInterval(intervalId);
   }, []);
@@ -35,8 +34,11 @@ export default function Landing() {
           <img
             src={imageUrls[currentImageIndex]}
             alt="Landing Page Image"
-            className={`fade-in ${imageLoaded ? 'visible' : ''}`}
-            onLoad={handleImageLoad}
+            className={`fade-in ${imageLoaded ? "visible" : ""}`}
+            onLoad={() => {
+              handleImageLoad();
+              setTimeout(() => setImageLoaded(false), 4000); // Set a timeout to trigger the fade-out effect after 4000 milliseconds (same as your interval)
+            }}
           />
         </div>
         <div className="text-container text-center">
