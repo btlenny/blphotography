@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .landing-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .content-container {
@@ -16,6 +22,14 @@
 .image-container {
   flex: 1;
   align-self: flex-start;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .text-container {
@@ -26,24 +40,51 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center text horizontally within the text container */
+  align-items: center;
 }
 
 #logo {
   max-width: 10%;
   max-width: 200px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   align-self: center;
 }
 
 /* Media query for mobile view */
 @media (max-width: 767px) {
-  .content-container {
-    flex-direction: column;
+  body, html {
+    margin: 0;
+    padding: 0;
   }
 
-  .image-container,
+  .content-container {
+    flex-direction: column;
+    margin: 0; /* Add margin: 0; if there's any unwanted margin */
+    padding-top: 0;
+  }
+
+  .landing-page {
+    height: 100%; /* Explicitly set height to 100% */
+  }
+}
+
+/* Media query for desktop view */
+@media (min-width: 768px) {
   .text-container {
-    order: 1;
+    text-align: center;
+  }
+
+  .image-container {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
   }
 }
