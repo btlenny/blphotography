@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+
+
+
+
 .landing-page {
+    background-color: linen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +24,16 @@
   }
   
   .text-container {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
     flex: 1;
     text-align: center;
+  }
+
+  #logo {
+    max-width: 10%;
+    max-width: 200px;
+    margin-bottom: 20px;
   }
   
   /* Media query for mobile view */
