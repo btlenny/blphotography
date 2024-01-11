@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./Landing.css";
 
 const imageUrls = [
-  "/images/Photo1.jpg",
-  "/images/Photo2.jpg",
-  "/images/Photo4.jpg",
-  "/images/Photo5.jpg",
+  "/images/Home.jpg",
+  "/images/Home-1.jpg",
+  "/images/Home-2.jpg",
+  "/images/Home-3.jpg",
+  "/images/Home-4.jpg",
+  "/images/Home-5.jpg",
+  "/images/Home-6.jpg",
 ];
 
 export default function Landing() {
@@ -44,7 +47,6 @@ export default function Landing() {
         <div className="text-container text-center">
           <img src="/logo.svg" id="logo" className="mx-auto" alt="Logo" />
           <h1 className="italic">RAW MOMENTS CAPTURED</h1>
-          <br></br>
           <a href="/work" className="border rounded-sm p-2 inline-block mt-4">
             COLLECTIONS
           </a>
