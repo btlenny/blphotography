@@ -52,7 +52,7 @@ export default function Landing() {
           <img src="/logo.svg" id="logo" className="mx-auto" alt="Logo" />
           <h1 className="italic">RAW MOMENTS CAPTURED</h1>
           <a href="/work" className="border rounded-sm p-2 inline-block mt-4">
-            COLLECTIONS
+            VIEW WORK
           </a>
         </div>
       </div>
