@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 @keyframes fadeInDown {
     from {
       opacity: 0;
@@ -12,3 +14,18 @@
   .fadeInDown {
     animation: fadeInDown 1s ease-out;
   }
+
+  hr {
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+    padding: 0 2rem; /* Adjust the padding as needed */
+  }
+
+  .title {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: gray;
+    font-size: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
