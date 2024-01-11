@@ -4,9 +4,9 @@ import './Gallery.css';
 export default function Gallery() {
     return (
       <>
-        {renderSection("Section 1", ["/images/Photo1.jpg", "/images/Photo2.jpg", "/images/Photo3.jpg", "/images/Photo4.jpg", "/images/Photo5.jpg", "/images/Photo6.jpg"])}
+        {renderSection("OK Carol", ["/images/OKCarol-1.jpg", "/images/OKCarol-2.jpg", "/images/OKCarol-3.jpg", "/images/OKCarol-4.jpg", "/images/OKCarol-5.jpg", "/images/OKCarol-6.jpg"])}
         <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
-        {renderSection("Section 2", ["/images/Photo7.jpg", "/images/Photo8.jpg", "/images/Photo9.jpg", "/images/Photo10.jpg", "/images/Photo11.jpg", "/images/Photo12.jpg"])}
+        {renderSection("McConkeys", ["/images/Photo7.jpg", "/images/Photo8.jpg", "/images/Photo9.jpg", "/images/Photo10.jpg", "/images/Photo11.jpg", "/images/Photo12.jpg"])}
       </>
     );
   
