@@ -1,3 +1,4 @@
+// React component
 import React, { useState, useEffect } from "react";
 import "./Landing.css";
 
@@ -21,7 +22,7 @@ export default function Landing() {
         prevIndex === imageUrls.length - 1 ? 0 : prevIndex + 1
       );
       setImageLoaded(false); // Reset imageLoaded for each new image
-    }, 8000); // 5000 milliseconds (5 seconds)
+    }, 5000); // 5000 milliseconds (5 seconds)
 
     return () => clearInterval(intervalId);
   }, []);
@@ -37,7 +38,10 @@ export default function Landing() {
           <img
             src={imageUrls[currentImageIndex]}
             alt="Landing Page Image"
-            className={`fade-in ${imageLoaded ? "visible" : ""}`}
+            style={{
+              transition: "opacity 0.5s ease-in-out",
+              opacity: imageLoaded ? 1 : 0,
+            }}
             onLoad={() => {
               handleImageLoad();
               setTimeout(() => setImageLoaded(false), 4000); // Set a timeout to trigger the fade-out effect after 4000 milliseconds (same as your interval)
