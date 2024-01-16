@@ -6,7 +6,7 @@ export default function Gallery() {
       <>
         {renderSection("OK Carol", ["/images/OKCarol-1.jpg", "/images/OKCarol-6.jpg", "/images/OKCarol-8.jpg", "/images/OKCarol-4.jpg", "/images/OKCarol-5.jpg", "/images/OKCarol-7.jpg"])}
         <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
-        {renderSection("McConkeys", ["/images/Photo7.jpg", "/images/Photo8.jpg", "/images/Photo9.jpg", "/images/Photo10.jpg", "/images/Photo11.jpg", "/images/Photo12.jpg"])}
+        {renderSection("McConkeys", ["/images/McConks.jpg", "/images/McConks-1.jpg", "/images/McConks-2.jpg", "/images/McConks-3.jpg", "/images/McConks-4.jpg", "/images/McConks-5.jpg"])}
       </>
     );
   
