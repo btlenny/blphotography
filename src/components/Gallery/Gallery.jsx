@@ -11,6 +11,8 @@ export default function Gallery() {
         {renderSection("Whites", ["/images/Whites-6.jpg", "/images/Whites-1.jpg", "/images/Whites-2.jpg", "/images/Whites-3.jpg", "/images/Whites-4.jpg", "/images/Whites-5.jpg"])}
         <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
         {renderSection("Peakes", ["/images/Peakes.jpg", "/images/Peakes-1.jpg", "/images/Peakes-2.jpg", "/images/Peakes-3.jpg", "/images/Peakes-4.jpg", "/images/Peakes-5.jpg"])}
+        <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
+        {renderSection("Clums", ["/images/Clums.jpg", "/images/Clums-1.jpg", "/images/Clums-2.jpg", "/images/Clums-3.jpg", "/images/Clums-4.jpg", "/images/Clums-5.jpg"])}
       </>
     );
   
