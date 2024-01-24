@@ -23,7 +23,7 @@ export default function Gallery() {
           <div className="grid grid-cols-3 gap-4">
             {imageSources.map((src, index) => (
               <div key={index}>
-                <img className="h-auto max-w-full rounded-xs fadeInDown" src={src} alt="" />
+                <img className="h-auto max-w-full rounded-xs fadeInDown" src={src} alt="" loading="lazy" />
               </div>
             ))}
           </div>
