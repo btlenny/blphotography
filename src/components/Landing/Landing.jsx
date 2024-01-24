@@ -7,7 +7,8 @@ const imageUrls = [
   "/images/Home-1.jpg",
   "/images/Home-2.jpg",
   "/images/Home-3.jpg",
-  "/images/Home-6.jpg",
+  "/images/Home-4.jpg",
+  "/images/Home-5.jpg"
 ];
 
 export default function Landing() {
