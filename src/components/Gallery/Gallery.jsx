@@ -9,6 +9,8 @@ export default function Gallery() {
         {renderSection("McConkey", ["/images/McConks.jpg", "/images/McConks-1.jpg", "/images/McConks-2.jpg", "/images/McConks-3.jpg", "/images/McConks-4.jpg", "/images/McConks-5.jpg"])}
         <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
         {renderSection("Whites", ["/images/Whites-6.jpg", "/images/Whites-1.jpg", "/images/Whites-2.jpg", "/images/Whites-3.jpg", "/images/Whites-4.jpg", "/images/Whites-5.jpg"])}
+        <hr className="w-90 border-t border-gray-100 my-4 scroll-px-4" />
+        {renderSection("Peakes", ["/images/Peakes.jpg", "/images/Peakes-1.jpg", "/images/Peakes-2.jpg", "/images/Peakes-3.jpg", "/images/Peakes-4.jpg", "/images/Peakes-5.jpg"])}
       </>
     );
   
